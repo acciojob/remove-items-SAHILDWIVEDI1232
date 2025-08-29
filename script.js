@@ -1,12 +1,11 @@
-//your JS code here. If required.
-document.addEventListener("DOMContentLoaded",function(){
-let select=document.getElementById("colorSelect");
-			
-let button=document.querySelector('input[type="button"]'];
-	button.addEventListener("click",function(){
-		let si=select.si;
-		if(si!==-1){
-			select.remove(si);
-		}
-	});
+document.addEventListener("DOMContentLoaded", function () {
+    const select = document.getElementById("colorSelect");
+    const button = document.querySelector('input[type="button"]');
+
+    button.addEventListener("click", function () {
+        const selectedIndex = select.selectedIndex;
+        if (selectedIndex !== -1) {
+            select.remove(selectedIndex);
+        }
+    });
 });
